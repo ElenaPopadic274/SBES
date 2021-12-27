@@ -71,27 +71,27 @@ namespace Client
 			this.Close();
 		}
 
-		public bool PokreniTimer(int key)
+		public bool PokreniTimer()
 		{
 			throw new NotImplementedException();
 		}
 
-		public bool ZaustaviTimer(int key)
+		public bool ZaustaviTimer()
 		{
 			throw new NotImplementedException();
 		}
 
-		public bool PonistiTimer(int key, Stopwatch st)
+		public bool PonistiTimer()
 		{
 			throw new NotImplementedException();
 		}
 
-		public bool PostaviTimer(int key, Stopwatch st)
+		public bool PostaviTimer()
 		{
 			throw new NotImplementedException();
 		}
 
-		public bool OcitajTimer(int key)
+		public bool OcitajTimer()
 		{
 			throw new NotImplementedException();
 		}

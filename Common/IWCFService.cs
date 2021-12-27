@@ -15,19 +15,19 @@ namespace Common
         void AddUser(string username, string password);
 
         [OperationContract]
-        bool PokreniTimer(int key);
+        bool PokreniTimer();
 
         [OperationContract]
-        bool ZaustaviTimer(int key);
+        bool ZaustaviTimer();
 
         [OperationContract]
-        bool PonistiTimer(int key, Stopwatch st);
+        bool PonistiTimer();
 
         [OperationContract]
-        bool PostaviTimer(int key, Stopwatch st);
+        bool PostaviTimer();
 
         [OperationContract]
-        bool OcitajTimer(int key);
+        bool OcitajTimer();
 
         [OperationContract]
         void ManagePermission(bool isAdd, string rolename, params string[] permissions);

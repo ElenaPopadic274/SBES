@@ -8,6 +8,7 @@ namespace Common
 {
     public class Stopwatch
     {
-        int time;
+        int minutes;
+        int seconds;
     }
 }
