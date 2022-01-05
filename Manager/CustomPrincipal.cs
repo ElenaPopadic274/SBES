@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Manager
 {
-    class CustomPrincipal : IPrincipal
+    public class CustomPrincipal : IPrincipal
     {
-        WindowsIdentity identity = null;
+        private readonly WindowsIdentity identity = null;
         public CustomPrincipal(WindowsIdentity windowsIdentity)
         {
             identity = windowsIdentity;
@@ -30,7 +30,11 @@ namespace Manager
                 string[] permissions;
                 if (RolesConfig.GetPermissions(groupName, out permissions))
                 {
-                    return true;
+                    foreach (string permision in permissions)
+                    {
+                        if (permision.Equals(permission))
+                            return true;
+                    }
                 }
             }
             return false;

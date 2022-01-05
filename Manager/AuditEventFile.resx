@@ -126,4 +126,28 @@
   <data name="AuthorizationSuccess" xml:space="preserve">
     <value>User {0} successfully accessed to {1}.</value>
   </data>
+  <data name="PokretanjeTajmeraFail" xml:space="preserve">
+    <value>Korisnik {0} nije pokrenuo tajmer.</value>
+  </data>
+  <data name="PokretanjeTajmeraSuc" xml:space="preserve">
+    <value>Korisnik {0} je uspesno pokrenuo tajmer.</value>
+  </data>
+  <data name="PonistavanjeTajmeraFail" xml:space="preserve">
+    <value>Korisnik {0} nije ponistio tajmer.</value>
+  </data>
+  <data name="PonistavanjeTajmeraSuc" xml:space="preserve">
+    <value>Korisnik {0} je uspesno ponistio tajmer.</value>
+  </data>
+  <data name="PostavljanjeTajmeraFail" xml:space="preserve">
+    <value>Korisnik {0} nije postavio tajmer.</value>
+  </data>
+  <data name="PostavljanjeTajmeraSuc" xml:space="preserve">
+    <value>Korisnik {0} je uspesno postavio tajmer.</value>
+  </data>
+  <data name="ZaustavljanjeTajmeraFail" xml:space="preserve">
+    <value>Korisnik {0} nije zaustavio tajmer.</value>
+  </data>
+  <data name="ZaustavljanjeTajmeraSuc" xml:space="preserve">
+    <value>Korisnik {0} je uspesno zaustavio tajmer.</value>
+  </data>
 </root>

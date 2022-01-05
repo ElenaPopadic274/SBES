@@ -11,7 +11,7 @@ namespace Manager
     {
 
         private static EventLog customLog = null;
-        const string SourceName = "SecurityManager.Audit";
+        const string SourceName = "Manager.Audit";
         const string LogName = "MySecTest";
 
         static Audit()
@@ -32,11 +32,9 @@ namespace Manager
             }
         }
 
-
+        #region AAA
         public static void AuthenticationSuccess(string userName)
         {
-            //TO DO
-
             if (customLog != null)
             {
                 string UserAuthenticationSuccess =
@@ -92,6 +90,129 @@ namespace Manager
                     (int)AuditEventTypes.AuthorizationFailure));
             }
         }
+        #endregion
+
+        #region TAJMER
+        public static void PokretanjeTajmeraSucc(string userName)
+        {
+            if (customLog != null)
+            {
+                string UserPokretanjeSuccess = AuditEvents.PokretanjeTajmeraSucc;
+                string message = String.Format(UserPokretanjeSuccess, userName);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.",
+                    (int)AuditEventTypes.PokretanjeTajmeraSuc));
+            }
+        }
+
+        public static void PokretanjeTajmeraFailed(string userName)
+        {
+            if (customLog != null)
+            {
+                string UserPokretanjeFailed = AuditEvents.PokretanjeTajmeraFailed;
+                string message = String.Format(UserPokretanjeFailed, userName);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.",
+                    (int)AuditEventTypes.PokretanjeTajmeraFail));
+            }
+        }
+
+        public static void ZaustavljanjeTajmeraSucc(string userName)
+        {
+            if (customLog != null)
+            {
+                string UserZaustavljanjeSuccess = AuditEvents.ZaustavljanjeTajmeraSucc;
+                string message = String.Format(UserZaustavljanjeSuccess, userName);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.",
+                    (int)AuditEventTypes.ZaustavljanjeTajmeraSuc));
+            }
+        }
+
+        public static void ZaustavljanjeTajmeraFailed(string userName)
+        {
+            if (customLog != null)
+            {
+                string UserZaustavljanjeFailed = AuditEvents.ZaustavljanjeTajmeraFailed;
+                string message = String.Format(UserZaustavljanjeFailed, userName);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.",
+                    (int)AuditEventTypes.ZaustavljanjeTajmeraFail));
+            }
+        }
+        public static void PostavljanjeTajmeraSucc(string userName)
+        {
+            if (customLog != null)
+            {
+                string UserPostavljanjeSuccess = AuditEvents.PostavljanjeTajmeraSucc;
+                string message = String.Format(UserPostavljanjeSuccess, userName);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.",
+                    (int)AuditEventTypes.PostavljanjeTajmeraSuc));
+            }
+        }
+
+        public static void PostavljanjeTajmeraFailed(string userName)
+        {
+            if (customLog != null)
+            {
+                string UserPostavljanjeFailed = AuditEvents.PostavljanjeTajmeraFailed;
+                string message = String.Format(UserPostavljanjeFailed, userName);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.",
+                    (int)AuditEventTypes.PostavljanjeTajmeraFail));
+            }
+        }
+
+        public static void PonistavanjeTajmeraSucc(string userName)
+        {
+            if (customLog != null)
+            {
+                string UserPonistavanjeSuccess = AuditEvents.PonistavanjeTajmeraSucc;
+                string message = String.Format(UserPonistavanjeSuccess, userName);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.",
+                    (int)AuditEventTypes.PonistavanjeTajmeraSuc));
+            }
+        }
+
+        public static void PonistavanjeTajmeraFailed(string userName)
+        {
+            if (customLog != null)
+            {
+                string UserPonistavanjeFailed = AuditEvents.PonistavanjeTajmeraFailed;
+                string message = String.Format(UserPonistavanjeFailed, userName);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.",
+                    (int)AuditEventTypes.PonistavanjeTajmeraFail));
+            }
+        }
+        #endregion
+
 
         public void Dispose()
         {

@@ -12,9 +12,6 @@ namespace Common
     {
 
         [OperationContract]
-        void AddUser(string username, string password);
-
-        [OperationContract]
         bool PokreniTimer();
 
         [OperationContract]
@@ -24,16 +21,16 @@ namespace Common
         bool PonistiTimer();
 
         [OperationContract]
-        bool PostaviTimer();
+        bool PostaviTimer(byte[] CipheredTimerMax);
 
         [OperationContract]
-        bool OcitajTimer();
+        string OcitajTimer();
 
         [OperationContract]
-        void ManagePermission(bool isAdd, string rolename, params string[] permissions);
+        bool ManagePermission(bool isAdd, string rolename, params string[] permissions);
 
         [OperationContract]
-        void ManageRoles(bool isAdd, string rolename);
+        bool ManageRoles(bool isAdd, string rolename);
 
     }
 }

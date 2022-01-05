@@ -86,5 +86,77 @@ namespace Manager {
                 return ResourceManager.GetString("AuthorizationSuccess", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korisnik {0} nije pokrenuo tajmer..
+        /// </summary>
+        internal static string PokretanjeTajmeraFail {
+            get {
+                return ResourceManager.GetString("PokretanjeTajmeraFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korisnik {0} je uspesno pokrenuo tajmer..
+        /// </summary>
+        internal static string PokretanjeTajmeraSuc {
+            get {
+                return ResourceManager.GetString("PokretanjeTajmeraSuc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korisnik {0} nije ponistio tajmer..
+        /// </summary>
+        internal static string PonistavanjeTajmeraFail {
+            get {
+                return ResourceManager.GetString("PonistavanjeTajmeraFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korisnik {0} je uspesno ponistio tajmer..
+        /// </summary>
+        internal static string PonistavanjeTajmeraSuc {
+            get {
+                return ResourceManager.GetString("PonistavanjeTajmeraSuc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korisnik {0} nije postavio tajmer..
+        /// </summary>
+        internal static string PostavljanjeTajmeraFail {
+            get {
+                return ResourceManager.GetString("PostavljanjeTajmeraFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korisnik {0} je uspesno postavio tajmer..
+        /// </summary>
+        internal static string PostavljanjeTajmeraSuc {
+            get {
+                return ResourceManager.GetString("PostavljanjeTajmeraSuc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korisnik {0} nije zaustavio tajmer..
+        /// </summary>
+        internal static string ZaustavljanjeTajmeraFail {
+            get {
+                return ResourceManager.GetString("ZaustavljanjeTajmeraFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korisnik {0} je uspesno zaustavio tajmer..
+        /// </summary>
+        internal static string ZaustavljanjeTajmeraSuc {
+            get {
+                return ResourceManager.GetString("ZaustavljanjeTajmeraSuc", resourceCulture);
+            }
+        }
     }
 }
