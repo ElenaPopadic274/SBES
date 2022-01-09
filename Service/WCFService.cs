@@ -24,7 +24,7 @@ namespace Service
 
 
         #region Metode
-        //[PrincipalPermission(SecurityAction.Demand, Role = "StartStop")]
+     
         public bool PokreniTimer()
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
@@ -62,7 +62,6 @@ namespace Service
             }
         }
 
-        //[PrincipalPermission(SecurityAction.Demand, Role = "StartStop")]
         public bool ZaustaviTimer()
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
@@ -99,7 +98,7 @@ namespace Service
             }
         }
 
-        //[PrincipalPermission(SecurityAction.Demand, Role = "Change")]
+
         public bool PonistiTimer()
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
@@ -137,7 +136,6 @@ namespace Service
             }
         }
 
-        //[PrincipalPermission(SecurityAction.Demand, Role = "Change")]
         public bool PostaviTimer(byte[] CipheredTimerMax)
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
@@ -174,7 +172,7 @@ namespace Service
             }
         }
 
-        //[PrincipalPermission(SecurityAction.Demand, Role = "See")]
+   
         public string OcitajTimer()
         {
             if (!Thread.CurrentPrincipal.IsInRole("See"))
@@ -271,40 +269,7 @@ namespace Service
         }
         #endregion
 
-        /*
-
-        [PrincipalPermission(SecurityAction.Demand, Role = "Administrate")]
-        public void AddUser(string username, string password)
-        {
-            if (!UserAccountsDB.ContainsKey(username))
-            {
-                UserAccountsDB.Add(username, new User(username, password));
-            }
-            else
-            {
-                Console.WriteLine($"Korisnik sa korisnickim imenom {username} vec postoji u bazi");
-            }
-
-            IIdentity identity = Thread.CurrentPrincipal.Identity;
-
-            Console.WriteLine("Tip autentifikacije : " + identity.AuthenticationType);
-
-            WindowsIdentity windowsIdentity = identity as WindowsIdentity;
-
-            Console.WriteLine("Ime klijenta koji je pozvao metodu : " + windowsIdentity.Name);
-            Console.WriteLine("Jedinstveni identifikator : " + windowsIdentity.User);
-
-            Console.WriteLine("Grupe korisnika:");
-            foreach (IdentityReference group in windowsIdentity.Groups)
-            {
-                SecurityIdentifier sid = (SecurityIdentifier)group.Translate(typeof(SecurityIdentifier));
-                string name = (sid.Translate(typeof(NTAccount))).ToString();
-                Console.WriteLine(name);
-            }
-        }
-        */
-        //#endregion
-
+       
         private static double DecryptNumber(byte[] encryptedNumber, string secretKey, CipherMode mode)
         {
             byte[] number = null;

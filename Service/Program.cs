@@ -53,7 +53,7 @@ namespace Service
             Console.ReadLine();
 
             Console.WriteLine("Servis je ugasen!");
-            //host.Close();
+
         }
 
     }

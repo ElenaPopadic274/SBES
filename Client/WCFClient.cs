@@ -19,7 +19,6 @@ namespace Client
 			: base(binding, address)
 		{
 			factory = this.CreateChannel();
-			//Credentials.Windows.AllowNtlm = false;
 		}
 
 
@@ -150,7 +149,7 @@ namespace Client
 					{
 						cryptoStream.Write(numberToCipher, 0, numberToCipher.Length);
 					}
-					encryptedNumber = desCryptoProvider.IV.Concat(memoryStream.ToArray()).ToArray(); //ako prebacimo u donji blok ne moze da cita memoriju
+					encryptedNumber = desCryptoProvider.IV.Concat(memoryStream.ToArray()).ToArray(); //ako prebacimo u using blok ne moze da cita memoriju
 				}
 			}
 			return encryptedNumber;
