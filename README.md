@@ -1,8 +1,9 @@
 # SBES
-Projekat iz predmeta Sigurnost i Bezbednost Elektroenergetskih Sistema, Fakultet Tehničkih Nauka.
+**Projekat iz predmeta Sigurnost i Bezbednost Elektroenergetskih Sistema, Fakultet Tehničkih Nauka.**
 
 
-Potrebno je realizovati sistem za sigurno korišćenje timer-a.
+**Potrebno je realizovati sistem za sigurno korišćenje timer-a.**
+
   -Korisnici se autentifikuju pomoću Windows autentifikacionog protokola.
   
   -Za autorizaciju sistema implementirati RBAC mehanizam. RBAC permisije koje sistem treba da ima su: </br>
@@ -24,9 +25,10 @@ Potrebno je realizovati sistem za sigurno korišćenje timer-a.
   -Neophodno je logovati sve akcije koje korisnik vrši u sistemu, osim čitanja vremena štoperice. Logovati pomoću Windows Event Log-a.
   
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Project in the subject of Security and Safety of Electric Power Systems, Faculty of Technical Sciences. 
+**Project in the subject of Security and Safety of Electric Power Systems, Faculty of Technical Sciences.** 
 
-It is necessary to implement a system for safe use of the timer. 
+**It is necessary to implement a system for safe use of the timer.** 
+
   -Users are authenticated using the Windows authentication protocol. 
   
   -Implement the RBAC mechanism to authorize the system. The RBAC permissions that the system should have are: </br>
