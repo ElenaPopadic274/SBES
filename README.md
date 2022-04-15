@@ -1,4 +1,4 @@
-# SBES
+# SBES - SIGURNOST I BEZBEDNOST ELEKTROENERGETSKIH SISTEMA | SECURITY AND SAFETY OF ELECTRIC POWER SYSTEMS
 **Projekat iz predmeta Sigurnost i Bezbednost Elektroenergetskih Sistema, Fakultet Tehničkih Nauka.**
 
 
